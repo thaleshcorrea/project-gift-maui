@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:dxe="clr-namespace:DevExpress.Maui.Editors;assembly=DevExpress.Maui.Editors"
+    xmlns:dxc="clr-namespace:DevExpress.Maui.Controls;assembly=DevExpress.Maui.Controls">
+
+    <Style TargetType="Label">
+        <Setter Property="FontFamily" Value="Exo_Regular"/>
+    </Style>
+    
+    <Style TargetType="dxc:SimpleButton">
+        <Setter Property="CornerRadius" Value="5"/>
+        <Setter Property="FontFamily" Value="Exo_Regular" />
+        <Setter Property="TextColor" Value="{StaticResource DarkPrimaryTextColor}"/>
+        <Setter Property="PressedTextColor" Value="{StaticResource DarkPrimaryTextColor}"/>
+        <Setter Property="BackgroundColor" Value="{StaticResource AccentColor}"/>
+        <Setter Property="IconColor" Value="{StaticResource DarkPrimaryTextColor}"/>
+    </Style>
+
+    <Style x:Key="Outlined_Button" TargetType="dxc:SimpleButton">
+        <Setter Property="FontFamily" Value="Exo_Regular" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}"/>
+        <Setter Property="PressedTextColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}"/>
+        <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource DarkButtonColor}, Dark={StaticResource LightButtonColor}}"/>
+        <Setter Property="BorderColor" Value="{StaticResource AccentColor}"/>
+        <Setter Property="PressedBorderColor" Value="{StaticResource AccentColor}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+    </Style>
+
+    <Style TargetType="dxe:TextEdit">
+        <Setter Property="TextFontFamily" Value="Exo_Regular" />
+        <Setter Property="FocusedBorderColor" Value="{StaticResource AccentColor}"/>
+        <Setter Property="FocusedLabelColor" Value="{StaticResource AccentColor}"/>
+    </Style>
+
+    <Style TargetType="dxe:PasswordEdit">
+        <Setter Property="TextFontFamily" Value="Exo_Regular" />
+        <Setter Property="FocusedBorderColor" Value="{StaticResource AccentColor}"/>
+        <Setter Property="FocusedLabelColor" Value="{StaticResource AccentColor}"/>
+    </Style>
+
+    <Style TargetType="dxe:CheckEdit">
+        <Setter Property="LabelFontFamily" Value="Exo_Regular" />
+        <Setter Property="CheckedCheckBoxColor" Value="{StaticResource AccentColor}"/>
+    </Style>
+    
+    <Style x:Key="Headline0FontSize_FontAwesome" TargetType="Label">
+        <Setter Property="FontFamily" Value="FontAwesome_Solid" />
+        <Setter Property="FontSize" Value="{StaticResource Headline0FontSize}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+    </Style>
+
+    <Style x:Key="Headline2FontSize_FontAwesome" TargetType="Label">
+        <Setter Property="FontFamily" Value="FontAwesome_Solid" />
+        <Setter Property="FontSize" Value="{StaticResource Headline2FontSize}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+    </Style>
+    <Style x:Key="Headline2_ExoBold" TargetType="Label">
+        <Setter Property="FontFamily" Value="Exo_Bold" />
+        <Setter Property="FontSize" Value="{StaticResource Headline2FontSize}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+    </Style>
+
+    <Style x:Key="Headline3_ExoBold" TargetType="Label">
+        <Setter Property="FontFamily" Value="Exo_Bold" />
+        <Setter Property="FontSize" Value="{StaticResource Headline3FontSize}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+    </Style>
+    <Style x:Key="Headline3_ExoRegular" TargetType="Label">
+        <Setter Property="FontFamily" Value="Exo_Regular" />
+        <Setter Property="FontSize" Value="{StaticResource Headline3FontSize}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+    </Style>
+
+    <Style x:Key="Headline4FontSize_ExoBold" TargetType="Label">
+        <Setter Property="FontFamily" Value="Exo_Bold" />
+        <Setter Property="FontSize" Value="{StaticResource Headline4FontSize}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+    </Style>
+
+    <Style x:Key="Subtitle1FontSize_ExoBold" TargetType="Label">
+        <Setter Property="FontFamily" Value="Exo_Bold" />
+        <Setter Property="FontSize" Value="{StaticResource Subtitle1FontSize}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+    </Style>
+    <Style x:Key="Subtitle1FontSize_ExoRegular" TargetType="Label">
+        <Setter Property="FontFamily" Value="Exo_Regular" />
+        <Setter Property="FontSize" Value="{StaticResource Subtitle1FontSize}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+    </Style>
+
+    <Style x:Key="Body1FontSize_ExoRegular" TargetType="Label">
+        <Setter Property="FontFamily" Value="Exo_Regular" />
+        <Setter Property="FontSize" Value="{StaticResource Body1FontSize}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+    </Style>
+    <Style x:Key="Body1FontSize_ExoBold" TargetType="Label">
+        <Setter Property="FontFamily" Value="Exo_Bold" />
+        <Setter Property="FontSize" Value="{StaticResource Body1FontSize}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+    </Style>
+
+    <Style x:Key="Body2FontSize_ExoRegular" TargetType="Label">
+        <Setter Property="FontFamily" Value="Exo_Regular" />
+        <Setter Property="FontSize" Value="{StaticResource Body2FontSize}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+    </Style>
+    <Style x:Key="Body2FontSize_ExoBold" TargetType="Label">
+        <Setter Property="FontFamily" Value="Exo_Bold" />
+        <Setter Property="FontSize" Value="{StaticResource Body2FontSize}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+    </Style>
+
+    <Style x:Key="Button_ExoRegular" TargetType="Label">
+        <Setter Property="FontFamily" Value="Exo_Regular" />
+        <Setter Property="FontSize" Value="{StaticResource ButtonFontSize}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+    </Style>
+
+    <Style x:Key="Link_ExoRegular" TargetType="Label">
+        <Setter Property="FontFamily" Value="Exo_Regular" />
+        <Setter Property="TextDecorations" Value="Underline" />
+        <Setter Property="FontSize" Value="{StaticResource ButtonFontSize}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+    </Style>
+
+    <Style x:Key="CaptionFontSize_ExoRegular" TargetType="Label">
+        <Setter Property="FontFamily" Value="Exo_Regular" />
+        <Setter Property="FontSize" Value="{StaticResource CaptionFontSize}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+    </Style>
+    <Style x:Key="CaptionFontSize_ExoMedium" TargetType="Label">
+        <Setter Property="FontFamily" Value="Exo_Medium" />
+        <Setter Property="FontSize" Value="{StaticResource CaptionFontSize}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+    </Style>
+    <Style x:Key="CaptionFontSize_FontAwesome" TargetType="Label">
+        <Setter Property="FontFamily" Value="FontAwesome_Solid" />
+        <Setter Property="FontSize" Value="{StaticResource CaptionFontSize}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+    </Style>
+    
+    <Style TargetType="Page" ApplyToDerivedTypes="True">
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource LightPageBackgroundColor}, Dark={StaticResource DarkPageBackgroundColor}}" />
+    </Style>
+
+    <Style TargetType="Shell" ApplyToDerivedTypes="True">
+        <Setter Property="Shell.BackgroundColor" Value="{AppThemeBinding Light={StaticResource LightPageBackgroundColor}, Dark={StaticResource DarkPageBackgroundColor}}" />
+        <Setter Property="Shell.ForegroundColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+        <Setter Property="Shell.TitleColor" Value="{StaticResource AccentColor}" />
+        <Setter Property="Shell.DisabledColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+        <Setter Property="Shell.UnselectedColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+        <Setter Property="Shell.TabBarBackgroundColor" Value="{AppThemeBinding Light={StaticResource LightTabBarBackgroundColor}, Dark={StaticResource DarkTabBarBackgroundColor}}" />
+        <Setter Property="Shell.TabBarForegroundColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+        <Setter Property="Shell.TabBarUnselectedColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+        <Setter Property="Shell.TabBarTitleColor" Value="{StaticResource AccentColor}" />
+    </Style>
+
+    <Style TargetType="NavigationPage">
+        <Setter Property="BarBackgroundColor" Value="{AppThemeBinding Light={StaticResource LightTabBarBackgroundColor}, Dark={StaticResource DarkTabBarBackgroundColor}}" />
+        <Setter Property="BarTextColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+        <Setter Property="IconColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+    </Style>
+
+    <Style TargetType="TabbedPage">
+        <Setter Property="BarBackgroundColor" Value="{AppThemeBinding Light={StaticResource LightTabBarBackgroundColor}, Dark={StaticResource DarkTabBarBackgroundColor}}" />
+        <Setter Property="BarTextColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+        <Setter Property="UnselectedTabColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+        <Setter Property="SelectedTabColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}, Dark={StaticResource DarkPrimaryTextColor}}" />
+    </Style>
+
+</ResourceDictionary>

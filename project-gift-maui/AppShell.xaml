@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="project_gift_maui.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:project_gift_maui.Views"
+    Shell.FlyoutBehavior="Disabled">
+
+    <ShellContent
+        Title="Bem-vindo"
+        ContentTemplate="{DataTemplate views:ApresentacaoPage}"
+        Route="ApresentacaoPage"/>
+    
+    <TabBar>
+        <ShellContent
+            Title="Página Inicial"
+            Icon="home"
+            ContentTemplate="{DataTemplate views:HomePage}"
+            Route="HomePage"/>
+        <ShellContent
+            Title="Calendário"
+            Icon="agenda"
+            ContentTemplate="{DataTemplate views:CalendarioPage}"
+            Route="CalendarioPage"/>
+        <ShellContent
+            Title="Mais"
+            Icon="mais"
+            ContentTemplate="{DataTemplate views:MaisPage}"
+            Route="MaisPage"/>
+    </TabBar>
+    
+</Shell>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:dxs="clr-namespace:DevExpress.Maui.Scheduler;assembly=DevExpress.Maui.Scheduler"
+             xmlns:dxc="clr-namespace:DevExpress.Maui.Controls;assembly=DevExpress.Maui.Controls"
+             x:Class="project_gift_maui.Views.CalendarioPage"
+             Title="Calendário">
+    <Grid>
+        <dxs:DayView>
+            <dxs:DayView.HeaderItemAppearance>
+                <dxs:DayViewHeaderItemAppearance
+                    TodayDayNumberBackgroundColor="{StaticResource AccentColor}"
+                    TodayWeekDayTextColor="{StaticResource DarkPrimaryTextColor}"/>
+            </dxs:DayView.HeaderItemAppearance>
+            <dxs:DayView.CellAppearance>
+                <dxs:DayViewCellAppearance
+                    TodayBackgroundColor="{StaticResource AccentColor200}"/>
+            </dxs:DayView.CellAppearance>
+        </dxs:DayView>
+    </Grid>
+</ContentPage>

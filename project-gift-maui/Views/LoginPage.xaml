@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:dxe="clr-namespace:DevExpress.Maui.Editors;assembly=DevExpress.Maui.Editors"
+             xmlns:dxc="clr-namespace:DevExpress.Maui.Controls;assembly=DevExpress.Maui.Controls"
+             x:Class="project_gift_maui.Views.LoginPage"
+             Padding="20"
+             Title="Entrar">
+    <VerticalStackLayout Spacing="10">
+        <Label Text="Entre com seu usário e senha"/>
+        <dxe:TextEdit
+            LabelText="E-mail"
+            StartIcon="email"
+            Text="{Binding Email}"/>
+        <dxe:PasswordEdit 
+            LabelText="Senha"
+            StartIcon="senha"
+            Text="{Binding Senha}"/>
+        <Label
+            Grid.Column="1"
+            Text="Esqueceu sua senha?"
+            HorizontalOptions="End"
+            Style="{StaticResource Link_ExoRegular}"/>
+        <dxc:SimpleButton 
+            Text="Entrar"
+            Command="{Binding LoginCommand}"/>
+        <Grid ColumnDefinitions="Auto,Auto"
+              HorizontalOptions="Center">
+            <Label 
+                Text="Não possui uma conta?"
+                VerticalOptions="Center"/>
+            <Label
+                Grid.Column="1"
+                Text="Registrar"
+                Margin="10,0,0,0"
+                Style="{StaticResource Link_ExoRegular}">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding RegistrarCommand}"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
